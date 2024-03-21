@@ -1,0 +1,97 @@
+/* --- font-suit --- */
+@font-face {
+  font-family: suit;
+  src: url(../fonts/suit/otf/SUIT-Thin.otf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: suit;
+  src: url(../fonts/suit/otf/SUIT-Light.otf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: suit;
+  src: url(../fonts/suit/otf/SUIT-Regular.otf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: suit;
+  src: url(../fonts/suit/otf/SUIT-SemiBold.otf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: suit;
+  src: url(../fonts/suit/otf/SUIT-Bold.otf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: suit;
+  src: url(../fonts/suit/otf/SUIT-ExtraLight.otf);
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: suit;
+  src: url(../fonts/suit/otf/SUIT-ExtraBold.otf);
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: suit;
+  src: url(../fonts/suit/otf/SUIT-Heavy.otf);
+  font-weight: 1000;
+}
+
+/* --- font-pretendard --- */
+@font-face {
+  font-family: pretendard;
+  src: url(../fonts/pretendard/static/Pretendard-Thin.otf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: pretendard;
+  src: url(../fonts/pretendard/static/Pretendard-Light.otf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: pretendard;
+  src: url(../fonts/pretendard/static/Pretendard-Regular.otf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: pretendard;
+  src: url(../fonts/pretendard/static/Pretendard-SemiBold.otf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: pretendard;
+  src: url(../fonts/pretendard/static/Pretendard-Bold.otf);
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: pretendard;
+  src: url(../fonts/pretendard/static/Pretendard-ExtraLight.otf);
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: pretendard;
+  src: url(../fonts/pretendard/static/Pretendard-ExtraBold.otf);
+  font-weight: 1000;
+}
+
+@font-face {
+  font-family: pretendard;
+  src: url(../fonts/pretendard/static/Pretendard-Black.otf);
+  font-weight: 1100;
+}

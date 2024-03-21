@@ -1,0 +1,32 @@
+@import "./variable.css";
+
+nav {
+  background: var(--color-white);
+  position: fixed;
+  width: 100%;
+  /* z-index: 999; */
+}
+nav .navbar {
+  max-width: 1463px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.navbar .nav-links {
+  display: inline-flex;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 17px;
+  font-weight: 400;
+  padding: 9px 15px;
+}

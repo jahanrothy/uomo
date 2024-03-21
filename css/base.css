@@ -1,0 +1,88 @@
+@import "./style.css";
+@import "./font.css";
+@import "./variable.css";
+
+/* --- Global Css --- */
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: block;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  font-family: var(--font-korea-primary);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  scroll-behavior: smooth;
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+  background-color: #f3f3f3;
+}
+
+@media (max-width: 992px) {
+  body.overflow {
+    overflow: hidden;
+  }
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  display: block;
+  margin: 0px !important;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* --- container --- */
+.container {
+  display: block;
+  max-width: 1463px;
+  width: 100%;
+  margin: auto;
+  padding: 0px 26px;
+}
+
+@media (max-width: 556px) {
+  .container {
+    padding: 0px 20px;
+  }
+}
