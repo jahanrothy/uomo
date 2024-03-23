@@ -1,18 +1,15 @@
 @import "./variable.css";
+@import "base.css";
 
-nav {
-  background: var(--color-white);
-  position: fixed;
-  width: 100%;
-  /* z-index: 999; */
-}
 nav .navbar {
-  max-width: 1463px;
+  position: relative;
+  /* width: 1463px; */
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 30px;
+  background: var(--color-white);
 }
 
 .navbar .nav-links {
@@ -23,10 +20,91 @@ nav .navbar {
   list-style: none;
 }
 
+.nav-links li:hover .shop-list {
+  top: 65px;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+}
+
 .nav-links li a {
   text-decoration: none;
   color: var(--text-color);
-  font-size: 17px;
-  font-weight: 400;
+  font-size: 15px;
+  font-weight: 600;
   padding: 9px 15px;
+  margin: 13px 13px;
+  text-transform: uppercase;
+}
+
+.shop-list {
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.shop-list .content {
+  background: var(--color-white);
+  padding: 45px 90px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.content .row {
+  width: calc(20% - 10px);
+  line-height: 22px;
+  position: relative;
+}
+
+.content .row:nth-child(1),
+.content .row:nth-child(2) {
+  border-left: 0px;
+}
+
+.content .row img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content .row .img-heading {
+  position: absolute;
+  top: 80%;
+  padding-left: 20px;
+  color: var(--text-primary);
+  font-size: 20px;
+  border-bottom: 1px solid var(--text-primary);
+  margin-bottom: -10px;
+}
+
+.content .row .img-heading p {
+  font-size: 15px;
+  padding-top: 5px;
+}
+
+.content .row h2 {
+  color: var(--text-secondary);
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 30px;
+
+  /* text-align: center; */
+}
+.content h2:hover {
+  color: var(--text-primary);
+}
+
+.row .list-item li {
+  padding: 0 10px;
+}
+
+.row .list-item li a {
+  padding: 0 10px;
+  color: var(--text-primary);
+  font-size: 12px;
+  display: block;
 }

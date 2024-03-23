@@ -79,6 +79,7 @@ img {
   width: 100%;
   margin: auto;
   padding: 0px 26px;
+  background: var(--color-white);
 }
 
 @media (max-width: 556px) {
