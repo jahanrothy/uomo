@@ -3,7 +3,6 @@
 
 nav .navbar {
   position: relative;
-  /* width: 1463px; */
   margin: auto;
   display: flex;
   align-items: center;
@@ -14,6 +13,35 @@ nav .navbar {
 
 .navbar .nav-links {
   display: inline-flex;
+}
+
+.nav-links li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background: var(--text-color);
+  left: 0;
+  transition: width 0.3;
+  bottom: -1px;
+}
+
+.nav-links li a:hover::after {
+  width: 40%;
+  text-decoration: underline;
+  transition: width 0.3s;
+  left: 13px;
+}
+
+.icon {
+  font-size: 20px;
+  display: flex;
+  /* padding: 5px 5px; */
+}
+
+.icon a {
+  padding: 15px;
+  color: var(--text-primary);
 }
 
 .nav-links li {
@@ -32,9 +60,10 @@ nav .navbar {
   color: var(--text-color);
   font-size: 15px;
   font-weight: 600;
-  padding: 9px 15px;
+  padding: 9px 12px;
   margin: 13px 13px;
   text-transform: uppercase;
+  position: relative;
 }
 
 .shop-list {
@@ -75,7 +104,7 @@ nav .navbar {
   position: absolute;
   top: 80%;
   padding-left: 20px;
-  color: var(--text-primary);
+  color: var(--text-color);
   font-size: 20px;
   border-bottom: 1px solid var(--text-primary);
   margin-bottom: -10px;
@@ -95,7 +124,7 @@ nav .navbar {
   /* text-align: center; */
 }
 .content h2:hover {
-  color: var(--text-primary);
+  color: var(--text-color);
 }
 
 .row .list-item li {
@@ -104,7 +133,102 @@ nav .navbar {
 
 .row .list-item li a {
   padding: 0 10px;
-  color: var(--text-primary);
+  color: var(--text-color);
   font-size: 12px;
   display: block;
+}
+
+.menu-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.imgbox {
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  display: block;
+}
+.collection {
+  width: 50%;
+}
+
+.collection-item {
+  position: relative;
+  background: var(--text-bg);
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .menu-toggle {
+  position: relative;
+  background: var(--text-bg);
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.items li {
+  list-style: none;
+}
+
+.items {
+  display: inline-flex;
+}
+
+.items li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 18px;
+  font-weight: 600;
+  padding: 9px 12px;
+  margin: 10px 18px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.items li a.active {
+  background-color: var(--text-color);
+  /* padding: 5px 25px; */
+  font-size: 23px;
+  color: var(--color-white);
+  border-radius: 4px;
+}
+.collection-list {
+  position: relative;
+  margin-right: 200px;
+  margin-top: 10px;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.collection-name li {
+  list-style: none;
+  padding: 10px 5px;
+}
+.product-options .collection-name li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.product-options .collection-name li a span {
+  color: var(--text-mark);
+}
+
+.products-name .collection-name li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
 }
