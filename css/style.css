@@ -1,6 +1,12 @@
 @import "./variable.css";
 @import "base.css";
 
+/* navigation start */
+
+/* navbar */
+nav {
+  height: 70px;
+}
 nav .navbar {
   position: relative;
   margin: auto;
@@ -28,9 +34,8 @@ nav .navbar {
 
 .nav-links li a:hover::after {
   width: 40%;
-  text-decoration: underline;
   transition: width 0.3s;
-  left: 13px;
+  left: 12px;
 }
 
 .icon {
@@ -48,13 +53,6 @@ nav .navbar {
   list-style: none;
 }
 
-.nav-links li:hover .shop-list {
-  top: 65px;
-  opacity: 1;
-  visibility: visible;
-  transition: all 0.3s ease;
-}
-
 .nav-links li a {
   text-decoration: none;
   color: var(--text-color);
@@ -65,33 +63,38 @@ nav .navbar {
   text-transform: uppercase;
   position: relative;
 }
+/* NAVBAR END */
 
+/* DROPDOWN START */
 .shop-list {
   position: absolute;
-  top: 80px;
+  top: 50px;
   width: 100%;
   left: 0;
   opacity: 0;
   visibility: hidden;
 }
 
+.nav-links li:hover .shop-list {
+  top: 65px;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+}
+
 .shop-list .content {
   background: var(--color-white);
-  padding: 45px 90px;
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
+  padding: 45px 80px;
+  /* display: flex; */
+  display: grid;
+  grid: gap 10px;
+  grid-template-columns: 1fr 1fr 1fr 1.5fr;
 }
 
 .content .row {
-  width: calc(20% - 10px);
+  /* width: calc(20% - 10px); */
   line-height: 22px;
-  position: relative;
-}
-
-.content .row:nth-child(1),
-.content .row:nth-child(2) {
-  border-left: 0px;
+  /* position: relative; */
 }
 
 .content .row img {
@@ -102,17 +105,17 @@ nav .navbar {
 
 .content .row .img-heading {
   position: absolute;
-  top: 80%;
+  top: 65%;
   padding-left: 20px;
   color: var(--text-color);
   font-size: 20px;
-  border-bottom: 1px solid var(--text-primary);
   margin-bottom: -10px;
 }
 
 .content .row .img-heading p {
   font-size: 15px;
   padding-top: 5px;
+  border-bottom: 1px solid var(--text-primary);
 }
 
 .content .row h2 {
@@ -138,22 +141,33 @@ nav .navbar {
   display: block;
 }
 
-.menu-page {
+.row .list-item li a:hover::after {
+  width: 25%;
+}
+
+/* DROPDOWN END */
+
+/* LINK PAGE */
+
+.menupage {
   width: 100%;
   height: 100%;
   display: flex;
   margin: 0;
   padding: 0;
   position: relative;
+  visibility: hidden;
+  display: none;
 }
 .imgbox {
   width: 50%;
-  height: 100%;
+  height: 80px;
   box-sizing: border-box;
   display: block;
 }
 .collection {
   width: 50%;
+  height: calc(100vh - 80px);
 }
 
 .collection-item {
@@ -232,3 +246,73 @@ nav .menu-toggle {
   font-weight: 500;
   text-transform: uppercase;
 }
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  background: var(--color-white);
+  font-size: 19px;
+}
+
+/* LINK PAGE END */
+
+/* swiper section */
+
+/* .swiper {
+  visibility: hidden;
+} */
+
+.swiper-slide {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.swiper-pagination-bullet-active {
+  color: #fff;
+  background: #007aff;
+}
+
+.slide-heading {
+  top: 30%;
+  position: absolute;
+  margin-left: 50px;
+  color: var(--text-color);
+}
+.slide-heading h2 {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.slide-heading h6 {
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.slide-heading p {
+  font-size: 16px;
+}
+.slide-heading h5 {
+  padding-top: 15px;
+  text-transform: uppercase;
+}
+
+/* swiper section end */
