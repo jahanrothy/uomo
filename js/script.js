@@ -1,6 +1,7 @@
-// function togglediv(){
-//     document.getElementsByClassName(menu_page).visibility = 'visible';
-// }
+function toggleMenupage(){
+    document.getElementsByClassName(menupage).visibility = 'visible';
+    console.log('kkdkk')
+}
 
 // var div = document.getElementsByClassName('menupage');
 // var display = 0;
@@ -19,15 +20,15 @@
 // }
 
 
-var Swiper = new Swiper(".mySwiper", {
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      renderBullet: function (index, className) {
-        return '<span class="' + className + '">"' + (index + 1) + "</span>";
+// const Swiper = new Swiper(".mySwiper", {
+//     pagination: {
+//       el: ".swiper-pagination",
+//       clickable: true,
+//       renderBullet: function (index, className) {
+//         return '<span class="' + className + '">"' + (index + 1) + "</span>";
         
-      },
-    },  
-  });
+//       },
+//     },  
+//   });
 
 
