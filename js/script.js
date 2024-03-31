@@ -1,7 +1,106 @@
-function toggleMenupage(){
-    document.getElementsByClassName(menupage).visibility = 'visible';
-    console.log('kkdkk')
+// function toggleMenupage() {
+//    let handle = document.getElementsByClassName("menu_page");
+//    handle. ("activepage");
+// }
+
+console.log(
+
+
+
+
+
+
+
+
+
+
+    'page'
+);
+
+function openMenupage(){
+    // e.preventDefault()
+    console.log('callded');
+    // console.log('even', e);
+
+    const menuPageElement = document.getElementsByClassName("menu_page");
+
+    const element = menuPageElement[0]
+    
+
+    console.log(element);
+
+    element.classList.add("active-menu-page");
+    // element.style.visibility ='visible';
+    
 }
+
+
+function closeMenupage(){
+    // e.preventDefault()
+    console.log('callded');
+    // console.log('even', e);
+
+    const menuPageElement = document.getElementsByClassName("menu_page");
+
+    const element = menuPageElement[0]
+    
+
+    console.log(element);
+
+    element.classList.remove("active-menu-page");
+    // element.style.visibility ='visible';
+    
+}
+
+openMenupage();
+closeMenupage();
+
+
+
+// console.log(handle);
+// toggleMenupage();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function toggleMenupage(){
+//     var menuPages = document.getElementsByClassName('menupage');
+//     for (var i = 0; i < menuPages.length; i++) {
+//         if (menuPages[i].style.visibility === 'visible') {
+//             menuPages[i].style.visibility = 'hidden';
+//         } else {
+//             menuPages[i].style.visibility = 'visible';
+//         }
+//     }
+//     console.log('kkdkk');
+// }
+
+
+// let div = document.getElementById('menupage');
+// let display = 0;
+
+// function toggleMenupage()
+// {
+//     if(display == 1)
+//     {
+//         StylePropertyMap.display = 'block';
+//     }
+//     else{
+//         StylePropertyMap.display = 'none';
+//         display = 1;
+//     }
+// }
 
 // var div = document.getElementsByClassName('menupage');
 // var display = 0;

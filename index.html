@@ -118,8 +118,10 @@
               <a href=""><i class="fa-regular fa-user"></i></a>
               <a href=""><i class="fa-regular fa-heart"></i></a>
               <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
-              <button onClick="toggleMenupage()">
-                <a href=""><i class="fa-solid fa-bars"></i></a>
+              <button onClick="openMenupage()" type="button">
+                <!-- <a href=""> -->
+                <i class="fa-solid fa-bars"></i>
+                <!-- </a> -->
               </button>
             </div>
           </div>
@@ -128,7 +130,7 @@
     </section>
 
     <!-- nav - menu page  -->
-    <div class="menupage">
+    <div class="menu_page">
       <div class="imgbox">
         <img src="img/bg-img/nav-bg.jpg" alt="" />
       </div>
@@ -142,6 +144,9 @@
                 <li><a href="">men</a></li>
                 <li><a href="">Kids</a></li>
               </ul>
+              <button class="btn" type="button" onClick="closeMenupage()">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
             </div>
           </nav>
         </div>

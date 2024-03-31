@@ -1,5 +1,5 @@
 {
   "workbench.view.alwaysShowHeaderActions": false,
   "gitlens.hovers.annotations.enabled": false,
-  "editor.hover.enabled": true
+  "editor.hover.enabled": false
 }
