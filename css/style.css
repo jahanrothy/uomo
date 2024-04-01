@@ -17,6 +17,14 @@ nav .navbar {
   background: var(--color-white);
 }
 
+.responsive-menu {
+  display: none;
+}
+
+.navbar .logo a img {
+  width: 100%;
+  height: 100%;
+}
 .navbar .nav-links {
   display: inline-flex;
 }
@@ -38,11 +46,23 @@ nav .navbar {
   left: 12px;
 }
 
+/* input */
+.search-input {
+  visibility: hidden;
+}
+/* input End */
+
 .icon {
   font-size: 20px;
   display: flex;
+  justify-content: space-between;
   /* padding: 5px 5px; */
 }
+
+/* .icon .bag i {
+  padding-top: 14px;
+  margin: 0 15px;
+} */
 
 .icon a {
   padding: 15px;
@@ -70,6 +90,7 @@ nav .navbar {
   position: absolute;
   top: 50px;
   width: 100%;
+  height: 100%;
   left: 0;
   opacity: 0;
   visibility: hidden;
@@ -156,7 +177,7 @@ nav .navbar {
 }
 .menu_page {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   margin: 0;
   padding: 0;
@@ -271,6 +292,7 @@ button {
 
 .swiper {
   visibility: hidden;
+  display: none;
 }
 
 /* .swiper-wrapper {

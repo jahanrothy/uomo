@@ -33,12 +33,24 @@
       <div class="header">
         <nav>
           <div class="navbar">
-            <a href="#" class="logo">
-              <img src="img/bg-img/logo-dark-blue.png" srcset="" />
-            </a>
+            <div class="responsive-menu">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="logo">
+              <a href="#">
+                <img src="img/bg-img/logo-dark-blue.png" srcset="" />
+              </a>
+            </div>
+
             <div class="menutoggle"></div>
 
             <ul class="nav-links">
+              <div class="search-input">
+                <form>
+                  <span class="fa-solid fa-magnifying-glass"></span>
+                  <input type="text" placeholder="Search" />
+                </form>
+              </div>
               <li><a href="#">Home</a></li>
               <li>
                 <a href="#">Shop</a>
@@ -117,7 +129,9 @@
               <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
               <a href=""><i class="fa-regular fa-user"></i></a>
               <a href=""><i class="fa-regular fa-heart"></i></a>
-              <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
+              <div class="bag">
+                <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
+              </div>
               <button onClick="openMenupage()" type="button">
                 <!-- <a href=""> -->
                 <i class="fa-solid fa-bars"></i>
@@ -197,57 +211,57 @@
     <!-- navigation end -->
 
     <!-- swiper start -->
-    <section class="container">
-      <div class="swiper-wrapper">
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="img/bg-img/slider1.jpg" alt="" srcset="" />
+    <!-- <section class="container"> -->
+    <div class="swiper-wrapper">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/bg-img/slider1.jpg" alt="" srcset="" />
 
-              <div class="slide-heading">
-                <h6>trending 2023</h6>
-                <h2>interior designs</h2>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur<br />
-                  adipisicing elit. Non, eius.
-                </p>
-                <h5>Buy Now</h5>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <img src="img/bg-img/slider1.jpg" alt="" srcset="" />
-
-              <div class="slide-heading">
-                <h6>trending 2023</h6>
-                <h2>interior designs</h2>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non,
-                  eius.
-                </p>
-                <h5>Buy Now</h5>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <img src="img/bg-img/slider1.jpg" alt="" srcset="" />
-
-              <div class="slide-heading">
-                <h6>trending 2023</h6>
-                <h2>interior designs</h2>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur<br />
-                  adipisicing elit. Non, eius.
-                </p>
-                <h5>Buy Now</h5>
-              </div>
+            <div class="slide-heading">
+              <h6>trending 2023</h6>
+              <h2>interior designs</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur<br />
+                adipisicing elit. Non, eius.
+              </p>
+              <h5>Buy Now</h5>
             </div>
           </div>
 
-          <div class="swiper-pagination"></div>
+          <div class="swiper-slide">
+            <img src="img/bg-img/slider1.jpg" alt="" srcset="" />
+
+            <div class="slide-heading">
+              <h6>trending 2023</h6>
+              <h2>interior designs</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non,
+                eius.
+              </p>
+              <h5>Buy Now</h5>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="img/bg-img/slider1.jpg" alt="" srcset="" />
+
+            <div class="slide-heading">
+              <h6>trending 2023</h6>
+              <h2>interior designs</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur<br />
+                adipisicing elit. Non, eius.
+              </p>
+              <h5>Buy Now</h5>
+            </div>
+          </div>
         </div>
+
+        <div class="swiper-pagination"></div>
       </div>
-    </section>
+    </div>
+    <!-- </section> -->
 
     <!-- swiper End -->
 
