@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UOMO</title>
 
-    <link rel="stylesheet" href="./css/all.css" />
-    <link rel="stylesheet" href="./css/base.css" />
-
     <!-- END! css stylesheet link -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,6 +23,9 @@
     />
     <!-- swiper link -->
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./css/all.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <!-- navigation start -->
@@ -34,7 +34,9 @@
         <nav>
           <div class="navbar">
             <div class="responsive-menu">
-              <i class="fa-solid fa-bars"></i>
+              <label for="open-button" class="open-button"
+                ><i class="fa-solid fa-bars"></i
+              ></label>
             </div>
             <div class="logo">
               <a href="#">
@@ -43,9 +45,13 @@
             </div>
 
             <div class="menutoggle"></div>
+            <input type="radio" name="slide" id="open-button" />
+            <input type="radio" name="slide" id="cancle-button" />
 
             <ul class="nav-links">
-              <label for=""><i class="fa-solid fa-xmark"></i></label>
+              <label for="cancle-button" class="cancle-button"
+                ><i class="fa-solid fa-xmark"></i
+              ></label>
               <div class="search-input">
                 <form>
                   <span class="fa-solid fa-magnifying-glass"></span>
@@ -54,7 +60,8 @@
               </div>
               <li><a href="#">Home</a></li>
               <li>
-                <a href="#">Shop</a>
+                <input type="checkbox" id="shop-open" />
+                <label for="shop-open" class="shop-open"><a>Shops</a></label>
 
                 <div class="shop-list">
                   <div class="content">
@@ -107,15 +114,18 @@
                         <li><a href="">Order Tracking</a></li>
                       </ul>
                     </div>
+
                     <div class="row">
-                      <img
-                        src="img/bg-img/mega-menu-item.jpg"
-                        alt=""
-                        srcset=""
-                      />
-                      <div class="img-heading">
-                        <h1>New<br />Horizons</h1>
-                        <p>Shop now</p>
+                      <div class="shop-image">
+                        <img
+                          src="img/bg-img/mega-menu-item.jpg"
+                          alt=""
+                          srcset=""
+                        />
+                        <div class="img-heading">
+                          <h1>New<br />Horizons</h1>
+                          <p>Shop now</p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -266,9 +276,9 @@
 
     <!-- swiper End -->
 
-    <script src="./js/script.js"></script>
-    <script src="./js/all.js"></script>
     <script src="./js/swiper-bundle.main.js"></script>
+    <script src="./js/all.js"></script>
+    <script src="./js/script.js"></script>
 
     <!-- END! app.js -->
   </body>

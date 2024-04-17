@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "swiper": "^11.1.1"
+  },
+  
+  "main": "index.html",
+  "name": "swiper-pagination-custom",
+  "scripts": {
+    "build": "echo This is a static template, there is no bundler or bundling involved!",
+    "start": "serve"
+  },
+  "tags": [
+    "swiper"
+  ]
+}
