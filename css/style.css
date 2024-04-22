@@ -588,7 +588,7 @@ h5 {
 }
 .tolltip-image {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   position: relative;
 }
 
@@ -623,6 +623,8 @@ h5 {
 
 .button1 {
   margin-left: 300px;
+  position: absolute;
+  position: absolute;
 }
 
 .button2 {
@@ -638,9 +640,156 @@ h5 {
   margin-top: 150px;
   position: absolute;
 }
+.tolls-card {
+  height: 270px;
+  width: 190px;
+  background-color: white;
+  padding: 15px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+.toll-card {
+  width: 90%;
+  height: 70%;
+  position: relative;
+  object-fit: cover;
+  object-position: center;
+}
+
+.toll-card p {
+  font-size: 13px;
+  color: var(--text-black);
+  padding-top: 5px;
+}
 
 /* tolltip !End */
 
+/* news section */
+
+.news {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.news-heading {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 100px;
+  font-size: 25px;
+}
+
+.news-item {
+  position: relative;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  margin: 20px 70px;
+}
+
+.top-image img {
+  width: 100%;
+  height: 65%;
+}
+.news-content .news-icon {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.news-icon a {
+  color: var(--font-color);
+}
+
+/* news section !End */
+
+/* Brand style */
+.brand {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.brands-name {
+  max-height: 100vh;
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+  grid-gap: 20px;
+  margin: 80px 100px;
+}
+.brands-name img {
+  width: 70%;
+  height: 80%;
+  transition: all 0.3s ease;
+}
+
+.brands-name img:hover {
+  transform: scale(1.2);
+}
+/* Brand style !End */
+
+/* product gallery */
+.product-gallery {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.gallery-item {
+  max-height: 100vh;
+  position: relative;
+  display: inline-block;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  margin: 90px 10px;
+}
+.gallery-item img {
+  /* width: 70%;
+  height: 90%; */
+  transition: all 0.3s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.2);
+}
+
+/* product gallery !End */
+
+/* .services {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+} */
+.services {
+  max-height: 100vh;
+  position: relative;
+  margin: 90px 0;
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  flex-direction: row;
+  padding: 0 30px;
+}
+.services-heading {
+  display: flex;
+}
+.icons {
+  font-size: 50px;
+  color: var(--card-text);
+  padding: 0 20px;
+}
+.service-content h4 {
+  text-transform: uppercase;
+}
+
+/* RESPONSIVE */
 /* navbar */
 @media (max-width: 1080px) {
   .navbar .logo a img {
